@@ -870,7 +870,7 @@ func _ready() -> void:
 	# Запускає анімацію з назвою \"Tree\"
 	play(\"Pine\")
 
-# Метод _process можна видалити, якщо не плануєш додавати іншу логіку
+
 "
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oi3di"]
