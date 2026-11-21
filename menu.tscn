@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://bfufu3m8ohsr3"]
+
+[ext_resource type="Script" uid="uid://djuka0t34m4yo" path="res://menu.gd" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://isieu5mhq5k0" path="res://MAP ASSETS/start.png" id="2_mae5d"]
+[ext_resource type="Texture2D" uid="uid://1sn4gnjrkw78" path="res://MAP ASSETS/exit.png" id="2_ouk20"]
+
+[node name="MENU" type="Node2D" unique_id=1876027284]
+script = ExtResource("1_lti8b")
+
+[node name="start-button" type="Button" parent="." unique_id=64940712]
+offset_left = 68.0
+offset_top = 259.0
+offset_right = 442.0
+offset_bottom = 466.0
+focus_mode = 1
+focus_behavior_recursive = 1
+mouse_force_pass_scroll_events = false
+icon = ExtResource("2_mae5d")
+flat = true
+
+[node name="exit-button" type="Button" parent="." unique_id=994380543]
+offset_left = 633.0
+offset_top = 256.0
+offset_right = 984.0
+offset_bottom = 470.0
+icon = ExtResource("2_ouk20")
+flat = true
+
+[node name="Label" type="Label" parent="." unique_id=354578487]
+offset_left = 474.0
+offset_top = 157.0
+offset_right = 689.0
+offset_bottom = 239.0
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="start-button" to="." method="_on_startbutton_pressed"]
+[connection signal="pressed" from="exit-button" to="." method="_on_exitbutton_pressed"]
